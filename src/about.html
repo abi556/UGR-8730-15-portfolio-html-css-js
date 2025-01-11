@@ -2,40 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Portfolio Website</title>
-    <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Me - Portfolio Website</title>
+        <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html"><img src="images/home-icon.png" alt = "home icon"> Home</a></li>
-                <li><a href="about.html"><img src="images/about-icon.png" alt = "about icon"> About Me</a></li>
-                <li><a href="education-skills.html"><img src="images/education-icon.png" alt = "Education icon"> Education & Skills</a></li>
-                <li><a href="projects.html"><img src="images/projects-icon.png" alt = "project icon"> Projects</a></li>
-                <li><a href="contact.html"><img src="images/contact-icon.png" alt = "contact icon"> Contact</a></li>
+    <header class="header">
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="../index.html"><img src="images/home-icon.png" alt="home icon"> </a></li>
+                <li class="nav-item"><a href="about.html"><img src="images/about-icon.png" alt="about icon"> About Me</a></li>
+                <li class="nav-item"><a href="education-skills.html"><img src="images/education-icon.png" alt="Education icon"> </a></li>
+                <li class="nav-item"><a href="projects.html"><img src="images/projects-icon.png" alt="project icon"> </a></li>
+                <li class="nav-item"><a href="contact.html"><img src="images/contact-icon.png" alt="contact icon"> </a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="about">
-            <h2><img src="images/about-icon.png" alt = "about icon"> About Me</h2>
-            <img src="images/about-image.png" alt="About Me Image">
-            <p>I'm a dedicated Software Engineering Student at Addis Ababa Institute of Technology, always eager to learn and grow. I'm a curious and creative individual who loves tackling complex problems and finding innovative solutions. I'm a team player who thrives in collaborative environments, and I'm passionate about using technology to make a positive impact on the world.
+    <div class="home">
+        <div>
+          <div class="profile">
+            <div>
+              <img
+                src="images/about-icon.png"
+                alt="about icon"
+                class="pro-image"
+              >
+            </div>
+            <div class="name">
+              <span> About Me </span> 
+            </div>
+          </div>
+        </div>
+    </div>      
+    <main class="main-content">
+        <section id="about" class="about-section">
+            <p class="about-description description-box">I'm a dedicated Software Engineering Student at Addis Ababa Institute of Technology, always eager to learn and grow. I'm a curious and creative individual who loves tackling complex problems and finding innovative solutions. I'm a team player who thrives in collaborative environments, and I'm passionate about using technology to make a positive impact on the world.
                 Beyond my academic pursuits, I'm actively involved in the developer community. I enjoy mentoring aspiring programmers and sharing my knowledge through online tutorials on Telegram.</p>
-            <h3>Personal Details</h3>
-            <ul>
-                <li>Name: Abiy Hailu</li>
-                <li>Email: abiymit@outlook.com</li>
-                <li>Residence: Addis Ababa, Ethiopia</li>
-                <li>Degree: BSc in Software Engineering ---on progress</li>
-            </ul>
-            <button onclick="window.open('other/cv.pdf', '_blank')">See My CV</button>
+            <div class="personal-details">
+                
+                <h3 class="personal-details-title description-boxp">Personal Details</h3>
+                <ul class="personal-details-list description-boxp">
+                    <li class="personal-detail">Name: Abiy Hailu</li>
+                    <li class="personal-detail">Email: abiymit@outlook.com</li>
+                    <li class="personal-detail">Residence: Addis Ababa, Ethiopia</li>
+                    <li class="personal-detail">Degree: BSc in Software Engineering ---on progress</li>
+                </ul>
+            </div>
         </section>
+        <button class="cv-buttona" onclick="window.open('other/cv.pdf', '_blank')">See My CV</button>
     </main>
-    <footer>
+    <footer class="footer">
         <p>© 2024 Abiy H Getachew. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

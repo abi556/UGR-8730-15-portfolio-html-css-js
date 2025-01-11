@@ -6,39 +6,58 @@
     <title>Education & Skills - Portfolio Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html"><img src="images/home-icon.png" alt = "home icon"> Home</a></li>
-                <li><a href="about.html"><img src="images/about-icon.png" alt = "about icon"> About Me</a></li>
-                <li><a href="education-skills.html"><img src="images/education-icon.png" alt = "Education icon"> Education & Skills</a></li>
-                <li><a href="projects.html"><img src="images/projects-icon.png" alt = "project icon"> Projects</a></li>
-                <li><a href="contact.html"><img src="images/contact-icon.png" alt = "contact icon"> Contact</a></li>
+    <header class="header">
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="../index.html"><img src="images/home-icon.png" alt="home icon"></a></li>
+                <li class="nav-item"><a href="about.html"><img src="images/about-icon.png" alt="about icon"> </a></li>
+                <li class="nav-item"><a href="education-skills.html"><img src="images/education-icon.png" alt="Education icon"> Education & Skills</a></li>
+                <li class="nav-item"><a href="projects.html"><img src="images/projects-icon.png" alt="project icon"> </a></li>
+                <li class="nav-item"><a href="contact.html"><img src="images/contact-icon.png" alt="contact icon"> </a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="education-skills">
-            <h2><img src="images/education-icon.png" alt = "Education icon"> Education & Skills</h2>
-            <h3><img src="images/education-image.png" alt="Education Image"> Education</h3>
-            <p>Software Engineering Student.
-            Currently pursuing a 5-year Bachelor of Science in Software Engineering at Addis Ababa Institute
-             of Technology, a constituent college of Addis Ababa University. This rigorous program equips me
-              with a strong foundation in software development principles, programming languages, and 
-              problem-solving skills.</p>
-            <h3><img src="images/skills-image.png" alt="Skills Image"> My skills</h3>
-            <ul>
-                <li><img src="images/icon1.png" alt="Icon 1"> Python Programming</li>
-                <li><img src="images/icon2.png" alt="Icon 2"> Java Programming</li>
-                <li><img src="images/icon3.png" alt="Icon 3"> Web Development</li>
-                <li><img src="images/icon4.png" alt="Icon 4"> Cybersecurity Tesing & Analysis</li>
-                <li><img src="images/icon5.png" alt="Icon 5"> Linux Fundamnetal, System Administration & Command-Line Proficency </li>
+    <div class="home">
+        <div>
+          <div class="profile">
+            <div>
+              <img
+                 src="images/education-icon.png" 
+                 alt="education icon"
+                 class="pro-image"
+              >
+            </div>
+            <div class="name"> <span> Education & Skills </span> 
+            </div>
+          </div>
+        </div>
+    </div>      
+    <main class="main-content">
+        <section id="education-skills" class="education-skills-section">
+            
+            <p class="education-description description-boxd">I am currently pursuing a BSc in Software Engineering at Addis Ababa Institute of Technology. My education has provided me with a strong foundation in software development, algorithms, and data structures. I have also gained practical experience through various projects and internships, which have helped me develop my problem-solving and teamwork skills.</p>
+            <div class="skill"> 
+            <h3 class="skills-title description-boxp ">Skills</h3>
+            <ul class="skills-list description-box">
+                <li class="skill-item">Programming Languages: Java, Python, JavaScript</li>
+                <li class="skill-item">Web Development: HTML, CSS, React, Node.js</li>
+                <li class="skill-item">Database Management: MySQL, MongoDB</li>
+                <li class="skill-item">Tools & Technologies: Git, Docker, AWS</li>
+                <li class="skill-item">Soft Skills: Teamwork, Communication, Problem-solving</li>
             </ul>
+           </div>
         </section>
     </main>
-    <footer>
+    <footer class="footer">
         <p>© 2024 Abiy H Getachew. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
